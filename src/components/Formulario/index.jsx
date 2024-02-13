@@ -39,7 +39,7 @@ const Formulario = ({setAlert}) => {
       mensaje: ''
     })
     setAlert({msg: 'Ya recibimos tu pedido, te contactaremos!', color: 'success'})
-    
+
     setTimeout(() => {
       setAlert({msg: '', color: ''})
     }, 5000);
@@ -86,7 +86,7 @@ const Formulario = ({setAlert}) => {
         value={contact.mensaje}
         onChange={e => handleChange('mensaje', e.target.value)}
       />
-      <Button variant="dark" type="submit" className="mb-3">
+      <Button variant="primary" type="submit" className="mb-3">
         Enviar
       </Button>
     </Form>

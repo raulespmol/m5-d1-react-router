@@ -5,7 +5,7 @@ import './style.css'
 
 const Navbar = () => {
   return (
-    <BootstrapNavbar bg="dark" variant="dark">
+    <BootstrapNavbar bg="danger" variant="dark">
       <Container>
         <Nav>
           <Link to="/">Inicio</Link>
