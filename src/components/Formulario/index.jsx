@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import './index.css'
+import './style.css'
 
 const Formulario = ({setAlert}) => {
   const [contact, setContact] = useState({
@@ -24,7 +24,7 @@ const Formulario = ({setAlert}) => {
       return
     }
 
-    if(mensaje.length < 10){
+    if(mensaje.length < 20){
       setAlert({msg: 'Escribe un mensaje más descriptivo', color: 'danger'})
       return
     }
@@ -33,7 +33,13 @@ const Formulario = ({setAlert}) => {
   }
 
   const sendMessage = () => {
-    setAlert({msg: 'Colaborador ingresado correctamente', color: 'success'})
+    setContact({
+      nombre: '',
+      correo: '',
+      mensaje: ''
+    })
+    setAlert({msg: 'Ya recibimos tu pedido, te contactaremos!', color: 'success'})
+    
     setTimeout(() => {
       setAlert({msg: '', color: ''})
     }, 5000);
@@ -73,6 +79,7 @@ const Formulario = ({setAlert}) => {
         onChange={e => handleChange('correo', e.target.value)}
       />
       <Form.Control 
+        as="textarea"
         placeholder="Describe tu pedido"
         type="text"
         name="mensaje"

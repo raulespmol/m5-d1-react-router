@@ -5,6 +5,8 @@ import Contacto from "./pages/Contacto"
 import Footer from "./components/Footer"
 
 function App() {
+
+
   return (
     <>
       <Navbar />
