@@ -3,10 +3,10 @@ import './style.css'
 
 const Footer = () => {
   return (
-    <Container fluid className="bg-dark p-4 text-light">
+    <Container fluid className="bg-dark py-1 text-light">
       <Container>
-        <p className="mb-0">HappyCake</p>
-        <small>Raúl Espinoza M (2024)</small>
+        <p className="mb-0 fs-5">HappyCake</p>
+        <small className="text-secondary">Raúl Espinoza M (2024)</small>
       </Container>
     </Container>
   )

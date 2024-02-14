@@ -10,5 +10,6 @@ input {
 }
 
 textarea {
-  min-height: 150px !important
+  min-height: 90px !important;
+  max-height: 150px !important
 }
