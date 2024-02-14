@@ -20,7 +20,7 @@ function App() {
           element={<Contacto />}
         />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

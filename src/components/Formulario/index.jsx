@@ -25,7 +25,7 @@ const Formulario = ({setAlert}) => {
     }
 
     if(mensaje.length < 20){
-      setAlert({msg: 'Escribe un mensaje más descriptivo', color: 'danger'})
+      setAlert({msg: 'Escribe un mensaje más descriptivo (min. 20 caracteres)', color: 'danger'})
       return
     }
 
@@ -86,7 +86,7 @@ const Formulario = ({setAlert}) => {
         value={contact.mensaje}
         onChange={e => handleChange('mensaje', e.target.value)}
       />
-      <Button variant="primary" type="submit" className="mb-3">
+      <Button variant="danger" type="submit" className="mb-3">
         Enviar
       </Button>
     </Form>

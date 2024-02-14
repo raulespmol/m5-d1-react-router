@@ -1,5 +1,14 @@
 body {
   margin: 0;
-  min-width: 320px;
+}
+
+#root {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cupcake {
+  width: 100px;
 }
