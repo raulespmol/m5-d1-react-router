@@ -1,12 +1,13 @@
-import Navbar from "./components/Navbar"
 import { Route, Routes } from "react-router-dom"
-import Home from "./pages/Home"
-import Contacto from "./pages/Contacto"
+
+import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 
+import Home from "./pages/Home"
+import Contacto from "./pages/Contacto"
+import NotFound from "./pages/NotFound"
+
 function App() {
-
-
   return (
     <>
       <Navbar />
@@ -18,6 +19,10 @@ function App() {
         <Route
           path="/contacto"
           element={<Contacto />}
+        />
+        <Route
+          path="*"
+          element={<NotFound />}
         />
       </Routes>
       <Footer />

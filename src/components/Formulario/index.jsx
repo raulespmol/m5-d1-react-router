@@ -86,7 +86,7 @@ const Formulario = ({setAlert}) => {
         value={contact.mensaje}
         onChange={e => handleChange('mensaje', e.target.value)}
       />
-      <Button variant="danger" type="submit" className="mb-3">
+      <Button variant="primary" type="submit" className="mb-3 text-light">
         Enviar
       </Button>
     </Form>
